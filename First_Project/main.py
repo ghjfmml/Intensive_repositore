@@ -1,9 +1,10 @@
 import telebot
 from telebot import types
 
+from sicret import API_TOKEN
 from lists import greetings
 
-bot = telebot.TeleBot("8749795223:AAFp-imSr0vxDXLRS5JO3k3u8rLDW9U6MN8")
+bot = telebot.TeleBot(API_TOKEN)
 
 def start_keyboard():
 	keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True)
